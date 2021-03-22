@@ -60,7 +60,7 @@ const squares = [30, 2, 8, 24, 11];
 // Vóór het script zie je de originele waardes:
 // console.log(numbers) geeft: [30, 2, 8, 24, 11];
 // Na jouw script zie je de aangepaste waardes:
-// console.log(numbers) geeft: [ 6, 12, 15, 87, 114 ];
+// console.log(numbers) geeft: [27000, 8, 512, 13824, 1331];
 
 console.log(squares);
 
