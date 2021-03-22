@@ -1,6 +1,6 @@
 // ==========================================
 // Opdracht 1
-// Schrijf een script dat iedere naam in bovenstaande array vervangt door een koosnaampje, door er -"je" achter te plakken.
+// Schrijf een script dat iedere naam in onderstaande array vervangt door een koosnaampje, door er -"je" achter te plakken.
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 namen zou bevatten!
 // ==========================================
 
@@ -23,7 +23,7 @@ console.log(names);
 
 // ==========================================
 // Opdracht 2
-// Schrijf een script dat ieder getal in bovenstaande array met 3 vermenigvuldigd.
+// Schrijf een script dat ieder getal in onderstaande array met 3 vermenigvuldigd.
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
@@ -46,3 +46,26 @@ for (let i = 0; i < numbers.length; i++) {
 }
 
 console.log(numbers);
+
+// ==========================================
+// Opdracht 3
+// Schrijf een script dat voor de maat van ieder vierkant in onderstaande array het volume uitrekent.
+// Het volume is lengte x breedte x hoogte
+// Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
+// ==========================================
+
+const squares = [30, 2, 8, 24, 11];
+
+// Verwachtte uitkomsten:
+// Vóór het script zie je de originele waardes:
+// console.log(numbers) geeft: [30, 2, 8, 24, 11];
+// Na jouw script zie je de aangepaste waardes:
+// console.log(numbers) geeft: [ 6, 12, 15, 87, 114 ];
+
+console.log(squares);
+
+for (let i = 0; i < squares.length; i++) {
+  squares[i] = squares[i] * squares[i] * squares[i];
+}
+
+console.log(squares);
