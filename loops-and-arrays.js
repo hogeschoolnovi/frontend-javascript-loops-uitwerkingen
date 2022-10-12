@@ -38,10 +38,10 @@ const numbers = [2, 4, 5, 29, 38];
 console.log(numbers);
 
 for (let i = 0; i < numbers.length; i++) {
-  if (i % 2 === 0) {
+  if (numbers[i] % 2 === 0) {
     numbers[i] = numbers[i] * 2;
   }
-  if (i % 2 !== 0) {
+  if (numbers[i] % 2 !== 0) {
     numbers[i] = numbers[i] * 3;
   }
   // als je alleen de uitkomst logt (zoals hieronder) zou je de array niet veranderen, en dat wil je juist wel!
