@@ -13,12 +13,8 @@ Schrijf onder iedere vraag de JavaScript code die gevraagd wordt en check overal
 ## Script runnen
 Als je de code wil runnen kun je dit doen door het volgende in de terminal in te voeren:
 
-```shell
-nodemon loops.js
-```
+`nodemon loops.js`
 
 Als je wisselt van bestand moet je nodemon eerst stoppen (ctrl + c voor zowel Windows als Mac) en dan opnieuw starten met de nieuwe bestandsnaam, zoals bijvoorbeeld:
 
-```shell
-nodemon arrays-and-loops.js
-```
+nodemon `arrays-and-loops.js`
