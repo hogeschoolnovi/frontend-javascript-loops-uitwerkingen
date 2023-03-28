@@ -20,7 +20,6 @@ for (let i = 0; i < names.length; i++) {
 
 console.log(names);
 
-
 // ==========================================
 // Opdracht 2
 // Schrijf een script dat ieder EVEN getal in onderstaande array met 2 vermenigvuldigd, en ieder ONEVEN getal met 3
@@ -53,9 +52,9 @@ console.log(numbers);
 
 // ==========================================
 // Opdracht 3
-// Schrijf een script dat voor de maat van ieder vierkant in onderstaande array het volume uitrekent.
-// Vervolgens moet de huidige waarde in de array overschreven worden met: "Het volume van [x] is [y]"
-// Het volume is lengte x breedte x hoogte
+// Schrijf een script dat voor de maat van ieder vierkant in onderstaande array, het volume uitrekent.
+// Het volume van een vierkant is Lengte x Breedte x Hoogte
+// Vervolgens moet de huidige waarde in de array overschreven worden met: "Het volume van [a] is [b]"
 // Zorg ervoor dat dit ook zou werken als de array wel 100 of 200 getallen zou bevatten!
 // ==========================================
 
@@ -63,9 +62,10 @@ const squares = [30, 2, 8, 24, 11];
 
 // Verwachtte uitkomsten:
 // Vóór het script zie je de originele waardes:
-// console.log(numbers) geeft: [30, 2, 8, 24, 11];
+// console.log(squares) geeft: [30, 2, 8, 24, 11];
 // Na jouw script zie je de aangepaste waardes:
-// console.log(numbers) geeft: [
+// console.log(squares) geeft:
+// [
 //   'Het volume van 30 is 27000',
 //   'Het volume van 2 is 8',
 //   'Het volume van 8 is 512',
