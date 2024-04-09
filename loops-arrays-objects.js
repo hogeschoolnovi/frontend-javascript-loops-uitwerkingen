@@ -148,42 +148,44 @@ const students = [
 // [
 //     { name: 'Mariska', city: 'Utrecht', zipCode: '3513', neighborhood: 'Pijlsweerd' },
 //     { name: 'Mehmet', city: 'Utrecht', zipCode: '3514', neighborhood: 'Vogelenbuurt' },
-//     { name: 'Dennis', city: 'Utrecht', zipCode: '3572', neighborhood: 'Vogelenbuurt' },
-//     { name: 'Robin', city: 'Utrecht', zipCode: '3581', neighborhood: 'Vogelenbuurt' },
-//     { name: 'Tanush', city: 'Utrecht', zipCode: '3512', neighborhood: 'Vogelenbuurt' },
+//     { name: 'Dennis', city: 'Utrecht', zipCode: '3572', neighborhood: 'Wittevrouwen' },
+//     { name: 'Robin', city: 'Utrecht', zipCode: '3581', neighborhood: 'Oudwijk' },
+//     { name: 'Tanush', city: 'Utrecht', zipCode: '3512', neighborhood: 'Binnenstad' },
 //     { name: 'Florien', city: 'Utrecht', zipCode: '3513', neighborhood: 'Pijlsweerd' },
-//     { name: 'Larissa', city: 'Utrecht', zipCode: '3583', neighborhood: 'Vogelenbuurt' },
-//     { name: 'Marijn', city: 'Utrecht', zipCode: '3572', neighborhood: 'Vogelenbuurt' },
-//     { name: 'Jan', city: 'Utrecht', zipCode: '3531', neighborhood: 'Vogelenbuurt' },
-//     { name: 'Laura', city: 'Utrecht', zipCode: '3531', neighborhood: 'Vogelenbuurt' },
+//     { name: 'Larissa', city: 'Utrecht', zipCode: '3583', neighborhood: 'Schildersbuurt' },
+//     { name: 'Marijn', city: 'Utrecht', zipCode: '3572', neighborhood: 'Wittevrouwen' },
+//     { name: 'Jan', city: 'Utrecht', zipCode: '3531', neighborhood: 'Lombok' },
+//     { name: 'Laura', city: 'Utrecht', zipCode: '3531', neighborhood: 'Lombok' },
 //     { name: 'Aicha', city: 'Utrecht', zipCode: '3514', neighborhood: 'Vogelenbuurt' },
-//     { name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: 'Vogelenbuurt' }
+//     { name: 'Karima', city: 'Utrecht', zipCode: '3531', neighborhood: 'Lombok' }
 // ]
 // ==========================================
 
 for (let i = 0; i < students.length; i++) {
     switch (students[i].zipCode) {
-        case '3513':
-            students[i].neighborhood = 'Pijlsweerd';
+        case "3513":
+            students[i].neighborhood = "Pijlsweerd";
             break;
-        case '3514':
-            students[i].neighborhood = 'Vogelenbuurt';
+        case "3514":
+            students[i].neighborhood = "Vogelenbuurt";
             break;
-        case '3512':
-            students[i].neighborhood = 'Vogelenbuurt';
+        case "3512":
+            students[i].neighborhood = "Binnenstad";
             break;
-        case '3531':
-            students[i].neighborhood = 'Vogelenbuurt';
+        case "3531":
+            students[i].neighborhood = "Lombok";
             break;
-        case '3572':
-            students[i].neighborhood = 'Vogelenbuurt';
+        case "3572":
+            students[i].neighborhood = "Wittevrouwen";
             break;
-        case '3581':
-            students[i].neighborhood = 'Vogelenbuurt';
+        case "3581":
+            students[i].neighborhood = "Oudwijk";
             break;
-        case '3583':
-            students[i].neighborhood = 'Vogelenbuurt';
+        case "3583":
+            students[i].neighborhood = "Schildersbuurt";
             break;
+        default:
+            students[i].neighborhood = "unknown";
     }
 }
 
