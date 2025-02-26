@@ -23,6 +23,12 @@ const salaryDetails = [
 	{name: 'Otis', salary: 2800}
 ];
 
+for (let i = 0; i < salaryDetails.length; i++) {
+	console.log('Beste ' + salaryDetails[i].name + ', je salaris van €' + salaryDetails[i].salary + ',- is zojuist overgemaakt. Val me nu alsjeblieft niet meer lastig.');
+	// het kan ook met template literals:
+	// console.log(`Beste ${salaryDetails[i].name}, je salaris van €${salaryDetails[i].salary},- is zojuist overgemaakt. Val me nu alsjeblieft niet meer lastig.`)
+}
+
 // ==========================================
 // Opdracht 2. Wanneer iemand een verlof-aanvraag doet, moet Bob eerst uit zijn hoofd uitrekenen of deze medewerker nog
 // voldoende vrije dagen over heeft voor de aanvraag. En dat gaat nog wel eens mis... Zorg ervoor dat het aantal vakantiedagen
@@ -44,6 +50,12 @@ const vacationDays = [
 	{name: 'Otis', totalVacationDays: 25, usedVacationDays: 7},
 ];
 
+for (let i = 0; i < vacationDays.length; i++) {
+	const vacationDaysLeft = vacationDays[i].totalVacationDays - vacationDays[i].usedVacationDays;
+	console.log(vacationDays[i].name + ' heeft nog ' + vacationDaysLeft + ' vakantiedagen over');
+	// het kan ook met template literals:
+	// console.log(`${vacationDays[i].name} heeft nog ${vacationDaysLeft} vakantiedagen over`);
+}
 
 // ==========================================
 // Opdracht 3. Bob heeft een lijst van medewerkers en de opleidingen die ze volgen. Hij wil weten wie er een opleiding volgen
@@ -63,7 +75,13 @@ const employeesInTraining = [
 	{name: 'Otis', training: 'Teamworktraining', month: 'Februari'},
 ];
 
-
+for (let i = 0; i < employeesInTraining.length; i++) {
+	if (employeesInTraining[i].month === "Januari") {
+		console.log(employeesInTraining[i].name + ': ' + employeesInTraining[i].training);
+		// het kan ook met template literals:
+		// console.log(`${employeesInTraining[i].name}: ${employeesInTraining[i].training}`);
+	}
+}
 
 // ==========================================
 // Opdracht 4a. Medewerkers worden ieder jaar beoordeelt op hun functioneren. Het is aan Bob om de scores om te zetten
@@ -91,6 +109,22 @@ const scores = [
 	{name: 'Otis', score: 100, salaryIncrease: null},
 ];
 
+for (let i = 0; i < scores.length; i++) {
+	if (scores[i].score < 60) {
+		console.log('0%');
+	} else if (scores[i].score < 70) {
+		console.log('2%');
+	} else if (scores[i].score < 90) {
+		console.log('3%');
+	} else if (scores[i].score < 100) {
+		console.log('4%');
+	} else {
+		console.log('6%');
+	}
+}
+
+console.log(scores);
+
 // ==========================================
 // Opdracht 4b. Breid je script uit door het percentage op te slaan in de 'salaryIncrease'-property van ieder object in de array.
 
@@ -106,7 +140,21 @@ const scores = [
 // ];
 // ==========================================
 
+for (let i = 0; i < scores.length; i++) {
+	if (scores[i].score < 60) {
+		scores[i] = '0%';
+	} else if (scores[i].score < 70) {
+		scores[i] = '2%';
+	} else if (scores[i].score < 90) {
+		scores[i] = '3%';
+	} else if (scores[i].score < 100) {
+		scores[i] = '4%';
+	} else {
+		scores[i] = '6%';
+	}
+}
 
+console.log(scores);
 
 // ==========================================
 // Opdracht 5. Bob wil ervoor zorgen dat al zijn medewerkers een correct bedrijfs-e-mailadres hebben. Deze e-mailadressen moeten
@@ -127,11 +175,19 @@ const scores = [
 
 const employees = [
 	{firstName: 'Max', lastName: 'Janssen'},
-	{firstName: 'Sophia', lastName: 'De Vries'},
+	{firstName: 'Sophia', lastName: 'Vries'},
 	{firstName: 'Ali', lastName: 'Bakir'},
-	{firstName: 'Nina', lastName: 'Van den Berg'},
+	{firstName: 'Nina', lastName: 'Berg'},
 	{firstName: 'Otis', lastName: 'Kuiper'},
 ];
+
+for (let i = 0; i < employees.length; i++) {
+	employees[i].email = employees[i].firstName + '.' + employees[i].lastName + '@loop-it-solutions.nl';
+	// het kan ook met template literals:
+	// employees[i].email = `${employees[i].firstName}.${employees[i].lastName}@loop-it-solutions.nl`;
+}
+
+// console.log(employees);
 
 // ==========================================
 // Opdracht 6 (BONUS). Bob wil dat alle e-mailadressen in kleine letters worden opgeslagen, zodat ze consistent zijn.
@@ -139,3 +195,9 @@ const employees = [
 // ==========================================
 
 
+for (let i = 0; i < employees.length; i++) {
+	const emailaddress = `${employees[i].firstName}.${employees[i].lastName}@loop-it-solutions.nl`;
+	employees[i].email = emailaddress.toLowerCase();
+}
+
+console.log(employees);
