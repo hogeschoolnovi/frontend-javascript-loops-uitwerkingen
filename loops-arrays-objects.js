@@ -166,9 +166,9 @@ console.log(scores);
 // Na jouw script zie je de aangepaste objecten:
 // console.log(employees) geeft: [
 //     { firstName: 'Max', lastName: 'Janssen', email: 'Max.Janssen@loop-it-solutions.nl' },
-//     { firstName: 'Sophia', lastName: 'De Vries', email: 'Sophia.DeVries@loop-it-solutions.nl' },
+//     { firstName: 'Sophia', lastName: 'Vries', email: 'Sophia.Vries@loop-it-solutions.nl' },
 //     { firstName: 'Ali', lastName: 'Bakir', email: 'Ali.Bakir@loop-it-solutions.nl' },
-//     { firstName: 'Nina', lastName: 'Van den Berg', email: 'Nina.VanDenBerg@loop-it-solutions.nl' },
+//     { firstName: 'Nina', lastName: 'Berg', email: 'Nina.Berg@loop-it-solutions.nl' },
 //     { firstName: 'Otis', lastName: 'Kuiper', email: 'Otis.Kuiper@loop-it-solutions.nl' },
 // ]
 // ==========================================
