@@ -142,15 +142,15 @@ console.log(scores);
 
 for (let i = 0; i < scores.length; i++) {
 	if (scores[i].score < 60) {
-		scores[i] = '0%';
+		scores[i].salaryIncrease = '0%';
 	} else if (scores[i].score < 70) {
-		scores[i] = '2%';
+		scores[i].salaryIncrease = '2%';
 	} else if (scores[i].score < 90) {
-		scores[i] = '3%';
+		scores[i].salaryIncrease = '3%';
 	} else if (scores[i].score < 100) {
-		scores[i] = '4%';
+		scores[i].salaryIncrease = '4%';
 	} else {
-		scores[i] = '6%';
+		scores[i].salaryIncrease = '6%';
 	}
 }
 
